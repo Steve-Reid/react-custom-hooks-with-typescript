@@ -1,3 +1,14 @@
+This is a small list app that demonstrates how [custom hooks](https://reactjs.org/docs/hooks-reference.html#useref) in React can be utilised to make a list component reuseable.
+
+The app allow demonstrates how events can be used to control an elements editability.
+
+In this case the user can make an item name editable by double clicking on it.
+
+Pressing 'Enter' will save the edit.
+
+Built from a [Starter project boilerplate](https://github.com/Steve-Reid/create-react-app-typescript) that has been configured with [Typescript](https://www.typescriptlang.org/) [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/).
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -20,7 +20,6 @@ const grocery: Nutrition[] = [
 
 export const App: React.FC<AppProps> = () => {
   const items = useList(grocery);
-  // const [list, setList] = React.useState<Nutrition[]>(grocery);
   const [editable, setEditable] = React.useState(false);
 
   const handleRemove = (id: string): void => {
@@ -40,17 +39,6 @@ export const App: React.FC<AppProps> = () => {
     if (e.key === 'Enter') {
       setEditable(false);
       items.saveItem(id, e.currentTarget.value);
-      // const updatedList = list.map(listItem => {
-      //   if (listItem.id === id) {
-      //     return {
-      //       ...listItem,
-      //       name: e.currentTarget.value,
-      //     };
-      //   }
-      //   return listItem;
-      // });
-
-      // setList(updatedList);
     }
   };
 
